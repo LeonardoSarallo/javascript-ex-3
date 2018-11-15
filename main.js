@@ -26,3 +26,4 @@ while (!surnamecheck && container < surnamelist.length)
     container++;
 }
 console.log(surnamecheck);
+var position = surnamelist.indexOf()
