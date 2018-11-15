@@ -7,23 +7,23 @@
 var surnamelist = ['rossi', 'bianchi', 'verdi', 'gialli', 'marroni']
 console.log(surnamelist);
 //ottengo cognome
-var mailutente = prompt('Inserisci il tuo cognome');
+var surname = prompt('Inserisci il tuo cognome');
 //inserisco il cognome utente nella lista dei cognomi
-surnamelist.push(mailutente)
+surnamelist.push(surname)
 //stampo la lista in ordine alfabetico
 surnamelist.sort();
 console.log(surnamelist);
-
-// for (var i = 0; surnamelist.length; i++)
 var surnamecheck = false;
 var container = 0;
-
 while (!surnamecheck && container < surnamelist.length)
 {
-    if (mailutente == surnamelist[container]) {
+    if (surname == surnamelist[container]) {
       surnamecheck = true;
     }
     container++;
 }
 console.log(surnamecheck);
-var position = surnamelist.indexOf()
+//stampo a video l'ordine alfabetico del cognome dell'utente
+var position = surnamelist.indexOf(surname);
+console.log(position);
+document.getElementById('orderposition').innerHTML = 'La tua posizione in base all\'ordine alfabatico è ' + position;
