@@ -26,4 +26,4 @@ console.log(surnamecheck);
 //stampo a video l'ordine alfabetico del cognome dell'utente
 var position = surnamelist.indexOf(surname);
 console.log(position);
-document.getElementById('orderposition').innerHTML = 'La tua posizione in base all\'ordine alfabetico è ' + position;
+document.getElementById('orderposition').innerHTML = 'La tua posizione in base all\'ordine alfabetico è: ' + position;
