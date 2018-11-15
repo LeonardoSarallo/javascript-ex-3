@@ -9,11 +9,11 @@ console.log(surnamelist);
 //ottengo cognome
 var surname = prompt('Inserisci il tuo cognome');
 //inserisco il cognome utente nella lista dei cognomi
-surnamelist.push(surname)
+surnamelist.push(surname);
 //stampo la lista in ordine alfabetico
 surnamelist.sort();
 console.log(surnamelist);
-
+//stampo la posizione
 var position = surnamelist.indexOf(surname);
 console.log(position);
-document.getElementById('orderposition').innerHTML = 'La tua posizione in base all\'ordine alfabetico è: ' + position;
+document.getElementById('orderposition').innerHTML = 'La tua posizione in base all\'ordine alfabetico è: ' + (position + 1);
